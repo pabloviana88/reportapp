@@ -237,6 +237,8 @@ public class DetalleReporte extends AppCompatActivity implements OnMapReadyCallb
         consultadatos();
         obtenerDatos();
     //   obtenerHistorial(); //lo nuevo que agregue.
+
+        
         initMaps();
         Traercomentarios();
         btn_actividad();
