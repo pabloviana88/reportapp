@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ReportApp</string>
+    <string name="usuario">usuario</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="maps_fragment">MAPA</string>
+    <string name="report_fragment">Reportes</string>
+    <string name="title_activity_map_fragment">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="facebook_app_id">306037300235471</string>
+    <string name="fb_login_protocol_scheme">fb306037300235471</string>
+    <string name="cancel_login">Inicio sesion cancelado</string>
+    <string name="error_login">Error en inicio de sesion</string>
+    <string name="nombre_cuenta">Nombre</string>
+    <string name="correo_cuenta">Email</string>
+    <string name="dd_mm_aaaa">Fecha de nacimiento</string>
+    <string name="apellido_cuenta">Apellido</string>
+</resources>

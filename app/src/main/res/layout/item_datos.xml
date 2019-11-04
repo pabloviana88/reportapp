@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Adapters.RecyclerViewAdapterDatos"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent"
+    android:id="@+id/layout_item_listadatos">
+    <LinearLayout
+        android:id="@+id/layout_datos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map"
+        android:gravity="top"
+android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:saveEnabled="false"
+            android:background="@drawable/vista_contenedorbordeado"
+            >
+            <android.support.v7.widget.CardView
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="7dp"
+                android:layout_marginRight="-10dp"
+                app:cardElevation="0dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_foto"
+                    android:layout_width="135dp"
+                    android:layout_height="137dp"
+                    android:background="@drawable/icon_ra_o_1024"
+                    android:scaleType="centerCrop" />
+            </android.support.v7.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+                    <android.support.v7.widget.CardView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        app:cardCornerRadius="7dp">
+                        <ImageView
+                            android:id="@+id/icono_categoria"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_pregunta" />
+                    </android.support.v7.widget.CardView>
+
+
+                    <TextView
+                        android:id="@+id/tv_tipo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Categoria"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/purple"
+                        android:textSize="17dp"
+                        android:textStyle="normal" />
+                    <TextView
+                        android:id="@+id/tv_estatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Estatus"
+                        android:visibility="gone"
+                        android:textColor="@color/purple"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/tv_direccion"
+                        android:layout_width="match_parent"
+                        android:ems="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Direccion"
+                        android:textSize="17dp"
+                        android:textColor="@color/purple"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_fecha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha"
+                        android:textColor="@color/purple"
+                        android:textSize="17dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <ImageView
+                        android:layout_gravity="bottom"
+
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/comentarios_o"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_comentario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="0"
+                        android:layout_gravity="bottom"
+                        android:textColor="@color/purple"
+                        android:textSize="17dp" />
+                    <ImageView
+                        android:layout_gravity="bottom"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+
+                        android:src="@drawable/me_gusta_o"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_megusta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="0"
+                        android:layout_gravity="bottom"
+                        android:textColor="@color/purple"
+                        android:textSize="17dp" />
+                </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_folio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Folio"
+                android:textSize="11sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/segmented_button_border"
+
+            android:orientation="horizontal"
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0.5dp"
+                android:weightSum="4"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/prueba_reportado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reportado"
+                    android:gravity="center"
+                    android:fontFamily="@font/mavenpro_regular"
+                    android:enabled="false"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:background="@drawable/vista_bordeadoizq"
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple"
+                    android:textSize="14dp"
+                   android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:layout_marginRight="1dp"/>
+
+                <Button
+                    android:id="@+id/prueba_recibido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recibido"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:fontFamily="@font/mavenpro_regular"
+                    android:textAllCaps="false"
+                    android:background="@color/blanco"
+                    android:textColor="@color/purple"
+                    android:textSize="14dp"
+                    android:layout_marginRight="1dp"/>
+                <Button
+                    android:id="@+id/prueba_proceso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="En Proceso"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mavenpro_regular"
+                    android:textAllCaps="false"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:background="@color/blanco"
+                    android:textColor="@color/purple"
+                    android:textSize="14dp"
+                    android:layout_marginRight="1dp"/>
+                <Button
+                    android:id="@+id/prueba_atendido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Atendido"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:fontFamily="@font/mavenpro_regular"
+                    android:background="@drawable/vista_bordeadoder"
+                    android:textAllCaps="false"
+                    android:enabled="false"
+                    android:textColor="@color/purple"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/segmented_button_border"
+            android:padding="1dp"
+           android:visibility="gone" >
+            <co.ceryle.segmentedbutton.SegmentedButtonGroup
+                android:id="@+id/segmentedButtonGroup"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:sbg_animateSelectorDuration="500"
+                app:sbg_backgroundColor="@color/blanco"
+                app:sbg_dividerColor="@color/purple"
+                app:sbg_dividerPadding="0dp"
+                app:sbg_dividerSize="1dp"
+                app:sbg_radius="7dp"
+                app:sbg_ripple="true"
+                app:sbg_selectorColor="@android:color/transparent"
+                app:sbg_selectorTextColor="@color/purple"
+                app:sbg_shadow="false"
+                app:sbg_shadowElevation="0dp"
+                app:sbg_dividerRadius="0dp"
+
+                >
+
+                <Button
+                    android:id="@+id/reportado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reportado"
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/recibido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="Recibido"
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple"
+                    android:textSize="16dp"
+                    />
+
+                <Button
+                    android:id="@+id/en_proceso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="En proceso"
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple"
+                    android:textSize="16dp"
+                    android:saveEnabled="false"/>
+
+                <Button
+                    android:id="@+id/atendido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="Atendido"
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple"
+                    android:textSize="16dp"
+                    android:saveEnabled="false"/>
+            </co.ceryle.segmentedbutton.SegmentedButtonGroup>
+
+
+        </LinearLayout>
+
+
+        <co.ceryle.radiorealbutton.RadioRealButtonGroup
+android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:rrbg_dividerColor="@color/purple"
+            app:rrbg_dividerSize="1dp"
+            app:rrbg_radius="10dp"
+            app:rrbg_enableDeselection="false"
+            app:rrbg_dividerPadding="0dp"
+            app:rrbg_backgroundColor="@color/blanco"
+
+            app:rrbg_borderColor="@color/purple"
+            app:rrbg_selectorSize="0dp">
+
+            <co.ceryle.radiorealbutton.RadioRealButton
+                android:id="@+id/RealButtonReportado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rrb_drawableHeight="36dp"
+                app:rrb_drawablePadding="8dp"
+                app:rrb_drawableWidth="36dp"
+                app:rrb_ripple="false"
+                app:rrb_rippleColor="@color/blanco"
+                app:rrb_text="Reportado"
+                app:rrb_textColor="@color/purple"/>
+
+            <co.ceryle.radiorealbutton.RadioRealButton
+                android:id="@+id/RealButtonrecibido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rrb_drawableGravity="right"
+                app:rrb_drawableHeight="36dp"
+                app:rrb_drawablePadding="8dp"
+                app:rrb_drawableWidth="36dp"
+                app:rrb_ripple="false"
+                app:rrb_rippleColor="@color/blanco"
+                app:rrb_text="Recibido"
+                app:rrb_textColor="@color/purple"/>
+            <co.ceryle.radiorealbutton.RadioRealButton
+                android:id="@+id/RealButtonProceso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rrb_drawableGravity="right"
+                app:rrb_drawableHeight="36dp"
+                app:rrb_drawablePadding="8dp"
+                app:rrb_drawableWidth="36dp"
+                app:rrb_ripple="false"
+                app:rrb_rippleColor="@color/blanco"
+                app:rrb_text="En proceso"
+                app:rrb_textColor="@color/purple"/>
+            <co.ceryle.radiorealbutton.RadioRealButton
+                android:id="@+id/RealButtonAtendido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rrb_drawableGravity="right"
+                app:rrb_drawableHeight="36dp"
+                app:rrb_drawablePadding="8dp"
+                app:rrb_drawableWidth="36dp"
+                app:rrb_ripple="false"
+                app:rrb_rippleColor="@color/blanco"
+                app:rrb_text="Atendido"
+                app:rrb_textColor="@color/purple"/>
+        </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/menu_top">
+        <item
+            android:id="@+id/drawerreportes"
+            android:icon="@drawable/ic_menu_reporte"
+            android:title="Reportes"
+
+            />
+    </group>
+    <group android:id="@+id/menu_mis">
+        <item
+            android:id="@+id/drawermisreportes"
+            android:icon="@drawable/misreportes_o"
+            android:title="Mis reportes"
+            app:actionViewClass="android.widget.TextView"
+            />
+    </group>
+    <group android:id="@+id/menu_no">
+        <item
+            android:id="@+id/drawernotificacion"
+            android:icon="@drawable/ic_menu_notificacion"
+            android:title="Notificaciones"
+            />
+    </group>
+    <group android:id="@+id/menu_co">
+        <item
+            android:id="@+id/drawerconfiguracion"
+            android:icon="@drawable/ic_menu_configuracion"
+            android:title="Configuraciones"
+            />
+    </group>
+
+</menu>

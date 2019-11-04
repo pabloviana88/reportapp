@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.MapFragment"
+    android:id="@+id/layoutmap"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Fragments.MapFragment" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+
+                android:layout_marginBottom="10dp"
+                >
+
+                <Button
+                    android:id="@+id/menu"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/ic_menu" />
+                <TextView
+                    android:id="@+id/etiqueta_configuracion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    />
+                <Button
+                    android:id="@+id/gps"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/ic_gps2"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/reportarproblema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vista_contenedorbordeado2"
+                android:text="¿Deseas reportar un problema?"
+                android:textAllCaps="false"
+                android:fontFamily="@font/mavenpro_regular"
+                android:textColor="@color/blanco"
+                android:textSize="18dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_datos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/map"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+
+            design:layout_anchor="@+id/map"
+            design:layout_anchorGravity="left|bottom">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewDatos"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:orientation="horizontal"/>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

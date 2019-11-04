@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/vista_contenedorbordeado2"
+    android:orientation="vertical"
+    android:padding="3dp"
+    android:layout_marginRight="10dp"
+
+    android:id="@+id/selec_tipo">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="0dp">
+                <ImageView
+                    android:id="@+id/image_view_tipo"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingLeft="50dp">
+            <Button
+                android:id="@+id/seleccion_tipo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_listo"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/name_tipo"
+            android:layout_width="70dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/image_view_tipo"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/blanco"
+            android:text="fuga de agua"
+            android:fontFamily="@font/mavenpro_regular"
+            android:autoSizeMaxTextSize="13dp"
+            android:autoSizeMinTextSize="6dp"
+            android:autoSizeTextType="uniform"
+            android:textSize="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

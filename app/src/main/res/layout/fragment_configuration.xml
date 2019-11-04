@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ConfigurationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/purple"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/useratras"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/ic_atras2"
+                />
+            <TextView
+                android:id="@+id/etiqueta_configuracion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blanco"
+                android:layout_weight="1"
+                android:text="CONFIGURACIÓN"
+                android:fontFamily="@font/mavenpro_bold"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"/>
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+               android:background="@android:color/transparent"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <Button
+                android:id="@+id/button_cuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_menu_usuario"
+                android:text="  Cuenta"
+                android:textColor="@color/purple"
+                android:fontFamily="@font/mavenpro_bold"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+
+                android:textAlignment="textStart" />
+
+            <Button
+                android:id="@+id/button_notificaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_menu_notificacion"
+                android:text="  Notificaciones"
+                android:textColor="@color/purple"
+               android:fontFamily="@font/mavenpro_bold"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+
+                android:textAlignment="textStart" />
+            <Button
+                android:id="@+id/button_acerca_de"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_menu_reporte"
+                android:text="  Acerca de"
+                android:textColor="@color/purple"
+                android:textSize="18dp"
+                android:fontFamily="@font/mavenpro_bold"
+                android:textAllCaps="false"
+
+                android:drawableTint="@color/purple"
+                android:textAlignment="textStart"
+                />
+            <Button
+                android:id="@+id/button_logout"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_atras3"
+                android:drawableTint="@color/purple"
+                android:text="  Cerrar sesión como"
+                android:fontFamily="@font/mavenpro_bold"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:textColor="@color/purple"
+                android:textAlignment="textStart"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>
